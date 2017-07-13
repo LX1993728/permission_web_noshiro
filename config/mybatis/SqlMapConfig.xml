@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 定义别名 -->
+	<typeAliases>
+	 	<!-- 批量别名定义 指定包路径，自动扫描包下边的pojo, 定义别名，别名默认为类名(首字母小写或大写) -->
+		<package name="liuxun.ssm.po" />
+	</typeAliases>
+
+	<!-- 由于使用Spring和mybatis整合的mapper扫描器，这里可以不用配置了 
+	<mappers>
+		<package name="liuxun.ssm.mapper"/>
+	</mappers>
+	-->
+</configuration>
